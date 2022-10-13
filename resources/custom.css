@@ -1,0 +1,197 @@
+/*
+# Colors
+
+- Cyan
+- Blue
+- Lime
+- Yellow
+- Fuchsia
+- Purple
+- Orange
+- DarkViolet
+
+*/
+
+body,
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.mono.mono.mono,
+.reveal .mono h1,
+.reveal .mono h2,
+.reveal .mono h3,
+.reveal .mono h4,
+.reveal .mono h5,
+.reveal .mono h6 {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  color: white;
+}
+.reveal {
+  font-size: 5vh;
+}
+
+/* https://github.com/hakimel/reveal.js/issues/180#issuecomment-9435021 */
+.reveal .slides {
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+.reveal .slides > section {
+  min-height: 90%;
+}
+.reveal .slides > section > section {
+  min-height: 100%;
+}
+
+/* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+.antiantialias {
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome                         */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
+}
+
+.reveal pre,
+.reveal pre code {
+  box-sizing: border-box;
+  box-shadow: none;
+  max-height: 90%;
+  padding: 1em 0.5em;
+  font-size: 1rem;
+  font-family: Ubuntu Mono !important;
+  line-height: 1.2rem;
+  padding: 1rem;
+}
+.reveal .full,
+.reveal .full pre,
+.reveal .full code {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  margin: 0 !important;
+  /*display: flex !important;*/
+  align-items: center !important;
+  justify-content: center !important;
+}
+.reveal .full video {
+  height: 90%;
+}
+.reveal .full code {
+  padding: 1rem;
+  overflow: auto;
+}
+
+.reveal li code {
+  background: lightgrey;
+  border-radius: 0.5em;
+  padding: 0.1em 0.2em;
+  margin: 0 0.1em;
+}
+
+.reveal a {
+  padding: 0 0.2em 0.1em 0.2em;
+  border-bottom-width: 0.1em !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: transparent;
+}
+.reveal .has-dark-background,
+.reveal .has-dark-background a {
+  color: white;
+}
+.reveal .has-dark-background a:hover {
+  color: white;
+  border-bottom-color: white;
+}
+
+.reveal,
+.reveal a {
+  color: black;
+}
+.reveal a:hover {
+  color: black;
+  border-bottom-color: black;
+}
+
+/*
+.slides {
+    background-image: url('./imgs/programmatic-logo-w-200.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+*/
+
+h1 {
+  line-height: 1em;
+}
+
+.cover footer {
+  margin-top: 4em;
+}
+
+.top {
+  top: 2em;
+}
+.reveal h2 {
+  margin-bottom: 1em;
+}
+.reveal .full h2 {
+  font-size: 1em;
+}
+.reveal h3 {
+  margin-bottom: 1em;
+}
+
+.reveal ul {
+  margin: 0;
+}
+.reveal ul li {
+  text-align: center;
+  list-style: none;
+  margin: 0 0 0.8em 0;
+}
+.reveal .huge li {
+  font-size: 2.11em;
+}
+
+iframe {
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+  background: none;
+  object-fit: contain;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+}
+
+.reveal blockquote {
+  box-shadow: none;
+}
+
+.caption {
+  font-size: 0.6em;
+  display: block;
+  text-align: right;
+  margin: -0.5em 8em 0 8em;
+}
